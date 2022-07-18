@@ -1,0 +1,147 @@
+// Font
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Montserrat:wght@300;500;700&display=swap");
+$fontStylePrimary: "Montserrat", sans-serif;
+$fontStyleSecondary: "Londrina Solid", cursive;
+// VARIABLE COLOR
+$bg-primary: #242933;
+$fontColor-primary: #ff8906;
+$fontColor-secondary: #e2d9d9;
+$color-line: #574e4e;
+
+body {
+  background-color: $bg-primary;
+  font-family: $fontStylePrimary;
+  color: $fontColor-secondary;
+}
+
+.nav-custom {
+  .navbar-brand {
+    font-weight: 500;
+    font-size: 35px;
+    color: $fontColor-primary;
+    font-family: $fontStyleSecondary;
+    letter-spacing: 2px;
+  }
+  .navbar-brand:hover {
+    color: $fontColor-primary;
+  }
+}
+
+#navbarNav {
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: $fontColor-secondary;
+        font-weight: 500;
+        margin-left: 2.5em;
+        transition: 0.8s;
+      }
+      .nav-link:hover {
+        color: $fontColor-primary;
+      }
+    }
+  }
+}
+
+.col {
+  .container-img {
+    width: max-content;
+    display: block;
+    margin: auto;
+    .img-person {
+      margin-bottom: 10px;
+    }
+    .container-sosmed {
+      display: block;
+      margin: auto;
+      ul {
+        width: max-content;
+        padding: 0;
+        margin: auto;
+        li {
+          display: inline;
+          list-style: none;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+.col:nth-child(2) {
+  padding-top: 40px;
+  h1 {
+    position: relative;
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-size: 65px;
+    margin: 0;
+    color: $fontColor-primary;
+    z-index: 9999;
+  }
+  .box-animation {
+    display: flex;
+    position: relative;
+    padding-left: 40px;
+    margin: 0;
+    .animation {
+      position: absolute;
+      height: 100%;
+      width: 18%;
+      background-color: #fff;
+      top: 0;
+      left: 0;
+    }
+  }
+  .box-animation1 {
+    display: flex;
+    position: relative;
+    padding-left: 40px;
+    margin: 0;
+    margin-bottom: 20px;
+    .animation {
+      position: absolute;
+      height: 100%;
+      width: 32%;
+      background-color: #fff;
+      top: 0;
+      right: 5px;
+    }
+  }
+
+  .box {
+    border-left: solid $color-line 5px;
+    border-right: solid $color-line 5px;
+    border-radius: 10px;
+    padding: 10px;
+    color: $fontColor-secondary;
+    margin-left: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .col {
+    .container-img {
+      width: max-content;
+      margin: 0;
+      .img-person {
+        margin-bottom: 10px;
+      }
+      .container-sosmed {
+        display: block;
+        margin: auto;
+        ul {
+          width: max-content;
+          padding: 0;
+          margin: auto;
+          li {
+            display: inline;
+            list-style: none;
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}
